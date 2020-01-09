@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:if="{{!hasUserInfo && canIUse}}">
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  </view>
+  <block wx:else>
+    <view class="page-section">
+      <view class="textarea-head">
+        <view class="textarea-title">
+        请留下您的留言
+        </view>
+      </view>
+      <form bindsubmit="postMessage">
+        <view class="textarea-wrp">
+          <textarea auto-height value="{{textareaContent}}" placeholder="字数最多1000字" bindinput="messageInput" />
+        </view>
+        <view class="submit-button">
+            <button type="primary" form-type="submit">
+              提交
+            </button>
+
+            <button bindtap="getMessageList">
+              刷新
+            </button>
+        </view>
+      </form>
+    </view>
+    
+    <view class="message-list">
+      <view wx:for="{{messages}}" class="message-ul">
+        <view class="message-avatar">
+          <image src="{{item.avatar}}" class="userinfo-avatar"></image>
+        </view>
+        <view class="message-content">
+          <view class="message-user">{{item.username}}</view>
+          <view class="message-text">{{item.text}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

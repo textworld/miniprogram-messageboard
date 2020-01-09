@@ -1,0 +1,102 @@
+.container{
+  background: #F8F8F8;
+  padding: 20rpx 0;
+}
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.message-list{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.message-ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+}
+.message-avatar{
+  margin: 0rpx 20rpx 10rpx 20rpx;
+}
+.message-user{
+  font-size: 36rpx;
+  color: #aaa;
+}
+.message-content{
+  margin-right: 20rpx;
+}
+.message-text{
+  margin-top: 10rpx;
+}
+
+/**
+留言
+**/
+textarea {
+  width: 700rpx;
+  padding: 25rpx 0;
+}
+
+.textarea-wrp {
+  padding: 0 25rpx;
+  background-color: #fff;
+}
+
+.page-section{
+  width: 100%;
+  margin-bottom: 60rpx;
+}
+
+.page-section:last-child{
+  margin-bottom: 0;
+}
+
+.textarea-head {
+  display: flex;
+  width: 750rpx;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.textarea-title {
+  font-size: 32rpx;
+  color: #999999;
+  margin-bottom: 10rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.textare-btn {
+  width: 60rpx;
+  height: auto;
+  margin: 0 20rpx;
+
+}
+.textarea-btn button{
+  font-size: 32rpx;
+  line-height: 32rpx;
+  padding: 12rpx 16rpx;
+  background-color: #27ae60;
+  color: #fff;
+}
+
+
+.submit-button button {
+  margin-top: 20rpx;
+  padding: 10rpx 0rpx;
+}
